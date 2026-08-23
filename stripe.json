@@ -1,0 +1,10 @@
+{
+  "mode": "test",
+  "account": "acct_1U75wgHEsahtAIF0",
+  "product_id": "prod_V7b06ce6N3q4HF",
+  "price_id": "price_1U7LoxHEsahtAIF0QP8axjFz",
+  "payment_link_id": "plink_1U7Lp3HEsahtAIF0UbmuSBVH",
+  "checkout_url": "https://buy.stripe.com/test_14A4gzeKSbHLbXO5STbAs00",
+  "amount_aud_cents": 1200,
+  "interval": "month"
+}

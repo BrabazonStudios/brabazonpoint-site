@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en-AU" class="desk">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=1280">
+<title>Agent Library — BrabazonPoint</title>
+<meta name="description" content="Build your AI crew. Mind, Code, Forge and OS. $12 a month.">
+<link rel="stylesheet" href="site.css">
+</head>
+<body class="desk crew-page">
+<header class="site-header">
+  <div class="wrap wide">
+    <a class="brand" href="index.html">
+      <span class="mark" aria-hidden="true">
+        <svg class="compass" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="16" cy="16" r="13" stroke="#C9A24A" stroke-width="1.2"/>
+          <path d="M16 5.5 L18.1 16 L16 14.3 L13.9 16 Z" fill="#C9A24A"/>
+          <path d="M16 26.5 L13.9 16 L16 17.7 L18.1 16 Z" fill="#8EC8FF" opacity="0.9"/>
+          <circle cx="16" cy="16" r="2" fill="#8EC8FF"/>
+          <path d="M6 16 H9.5 M22.5 16 H26" stroke="#8EC8FF" stroke-width="1" opacity="0.7"/>
+        </svg>
+      </span>
+      <span class="wordmark">BRABAZONPOINT</span>
+    </a>
+    <nav class="nav" aria-label="Site">
+      <a href="agents.html" aria-current="page">Agents</a>
+      <a href="pricing.html">Pricing</a>
+      <a href="demo.html">Demo</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+<main class="crew">
+  <section class="crew-main">
+    <div class="crew-head">
+      <p class="kicker">Agent library</p>
+      <h1>Build your AI crew</h1>
+      <p class="lead">Assemble specialised agents into one coordinated team. They talk. They wait for you. $12 a month.</p>
+    </div>
+
+    <div class="crew-toolbar glass" role="search">
+      <label class="sr-only" for="q">Search agents</label>
+      <input id="q" type="search" placeholder="Search agents…" autocomplete="off">
+      <span class="chip">All categories</span>
+      <span class="chip">All capabilities</span>
+      <span class="chip muted">Sort: Recommended</span>
+    </div>
+
+    <div class="crew-grid" id="crew-grid">
+      <article class="agent-card glass" data-id="mind" data-name="BrabazonMind" data-role="Reasoning &amp; Analysis" data-tags="reasoning memory planning">
+        <div class="agent-art"><img src="img/agents/mind.png" alt="BrabazonMind" width="480" height="640" loading="lazy"></div>
+        <p class="meta">Mind</p>
+        <h3>BrabazonMind</h3>
+        <p class="role">Reasoning &amp; Analysis</p>
+        <div class="tags"><span>Reasoning</span><span>Memory</span><span>Planning</span></div>
+        <p>Reads the brief. Writes the plan. Holds long-term memory for the team.</p>
+        <button type="button" class="btn btn-add" data-add="mind">+ Add to Team</button>
+      </article>
+      <article class="agent-card glass" data-id="code" data-name="BrabazonCode" data-role="Engineering &amp; Automation" data-tags="code automation testing">
+        <div class="agent-art"><img src="img/agents/code.png" alt="BrabazonCode" width="480" height="640" loading="lazy"></div>
+        <p class="meta">Code</p>
+        <h3>BrabazonCode</h3>
+        <p class="role">Engineering &amp; Automation</p>
+        <div class="tags"><span>Build</span><span>Automation</span><span>Testing</span></div>
+        <p>Builds, tests and automates. Tools stay closed until you open the gate.</p>
+        <button type="button" class="btn btn-add" data-add="code">+ Add to Team</button>
+      </article>
+      <article class="agent-card glass" data-id="forge" data-name="BrabazonForge" data-role="Craft &amp; Outfitting" data-tags="forge tools vessels harnesses">
+        <div class="agent-art"><img src="img/agents/forge.png" alt="BrabazonForge" width="480" height="640" loading="lazy"></div>
+        <p class="meta">Forge</p>
+        <h3>BrabazonForge</h3>
+        <p class="role">Craft &amp; Outfitting</p>
+        <div class="tags"><span>Tools</span><span>Vessels</span><span>Harnesses</span></div>
+        <p>Forges the tools, vessels and harnesses the crew runs on.</p>
+        <button type="button" class="btn btn-add" data-add="forge">+ Add to Team</button>
+      </article>
+      <article class="agent-card glass" data-id="os" data-name="BrabazonOS" data-role="Orchestration &amp; Governance" data-tags="orchestration permissions monitoring">
+        <div class="agent-art"><img src="img/agents/os.png" alt="BrabazonOS" width="480" height="640" loading="lazy"></div>
+        <p class="meta">OS</p>
+        <h3>BrabazonOS</h3>
+        <p class="role">Orchestration &amp; Governance</p>
+        <div class="tags"><span>Orchestrate</span><span>Permissions</span><span>Watch</span></div>
+        <p>Coordinates the crew. Checks permissions. Hands the next step.</p>
+        <button type="button" class="btn btn-add" data-add="os">+ Add to Team</button>
+      </article>
+    </div>
+
+    <div class="trust-bar glass">
+      <span>Private by design</span>
+      <span>Role-based access</span>
+      <span>Audit-ready</span>
+      <span>You stay in control</span>
+    </div>
+  </section>
+
+  <aside class="team-rail glass" aria-label="Your team">
+    <header class="team-head">
+      <div>
+        <p class="kicker">Your Team</p>
+        <p class="team-count"><span id="count">0</span> agents selected</p>
+      </div>
+      <span class="badge" id="ready">Empty</span>
+    </header>
+    <ol class="team-order" id="order"></ol>
+    <p class="empty-hint" id="hint">Add agents from the library. Drag order comes later — for now, click to add or remove.</p>
+    <div class="perm">
+      <p class="kicker">Permissions</p>
+      <ul>
+        <li><span>Data access</span><strong>Standard</strong></li>
+        <li><span>Financial actions</span><strong>Read only</strong></li>
+        <li><span>System controls</span><strong>Limited</strong></li>
+        <li><span>External tools</span><strong>Allowed</strong></li>
+      </ul>
+    </div>
+    <a class="btn btn-deploy" id="deploy" href="https://buy.stripe.com/test_14A4gzeKSbHLbXO5STbAs00" target="_blank" rel="noopener">Deploy Team · $12/mo</a>
+    <p class="form-note">Preview only. Deploy opens Stripe Checkout (test). No live agents start here.</p>
+  </aside>
+</main>
+<footer class="site-footer">
+  <div class="wrap wide">
+    <div><span class="wm">BRABAZONPOINT</span> · Huonville, Tasmania · <a href="mailto:billy@brabazonpoint.com">billy@brabazonpoint.com</a></div>
+    <div>Billy Jackson</div>
+  </div>
+</footer>
+<script>
+const team = [];
+const order = document.getElementById("order");
+const count = document.getElementById("count");
+const ready = document.getElementById("ready");
+const hint = document.getElementById("hint");
+const q = document.getElementById("q");
+
+function render() {
+  order.innerHTML = "";
+  team.forEach((a, i) => {
+    const li = document.createElement("li");
+    li.innerHTML = `<span class="n">${i+1}</span><div><strong>${a.name}</strong><p>${a.role}</p></div><button type="button" class="rm" data-rm="${a.id}" aria-label="Remove">×</button>`;
+    order.appendChild(li);
+  });
+  count.textContent = String(team.length);
+  ready.textContent = team.length ? "Ready to deploy" : "Empty";
+  ready.classList.toggle("on", team.length > 0);
+  hint.hidden = team.length > 0;
+  document.querySelectorAll("[data-add]").forEach(btn => {
+    const on = team.some(t => t.id === btn.dataset.add);
+    btn.textContent = on ? "In team" : "+ Add to Team";
+    btn.classList.toggle("in", on);
+  });
+}
+
+document.getElementById("crew-grid").addEventListener("click", e => {
+  const btn = e.target.closest("[data-add]");
+  if (!btn) return;
+  const card = btn.closest(".agent-card");
+  const id = card.dataset.id;
+  const i = team.findIndex(t => t.id === id);
+  if (i >= 0) team.splice(i, 1);
+  else team.push({ id, name: card.dataset.name, role: card.dataset.role });
+  render();
+});
+order.addEventListener("click", e => {
+  const b = e.target.closest("[data-rm]");
+  if (!b) return;
+  const i = team.findIndex(t => t.id === b.dataset.rm);
+  if (i >= 0) team.splice(i, 1);
+  render();
+});
+q.addEventListener("input", () => {
+  const v = q.value.trim().toLowerCase();
+  document.querySelectorAll(".agent-card").forEach(c => {
+    const hay = (c.dataset.name + " " + c.dataset.role + " " + c.dataset.tags).toLowerCase();
+    c.hidden = v && !hay.includes(v);
+  });
+});
+render();
+</script>
+</body>
+</html>
