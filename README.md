@@ -34,10 +34,11 @@ The five names on the roster are **visual identities** for the agent line. They 
 
 ## Pricing (do not invent)
 
-- Cloud agents (BrabazonMind, BrabazonCode, BrabazonForge, BrabazonOS): **$12/month each**. Not one $12 plan for all of them.
-- Local agent (brabazonAgent): **$70** plus **$7** training.
+- Cloud agents (BrabazonMind, BrabazonCode, BrabazonForge, BrabazonOS, vessel line): **$12/month each**. One agent = $12. Two = $24. Four = $48.
+- Local agent (brabazonAgent): **$70** plus **$7 per added dataset or training pass**.
 - Model installs are **free**.
-- AI PC builds are offered with the local agent. Do not invent a price for them.
+- AI PC builds are a **custom quote**. Do not invent a price for them.
+- No BrabazonWallet. That line was replaced by Forge.
 - Cloud subscribe CTAs use the Stripe test Payment Link in `stripe.json`.
 
 Build Your Team and Watch Demo are honest previews. They do not start agents, spend money, or claim a live deployment.
