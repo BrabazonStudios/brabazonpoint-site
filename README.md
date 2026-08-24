@@ -36,7 +36,7 @@ The five names on the roster are **visual identities** for the agent line. They 
 
 - Primary offer: **AI services** and custom **local AI PCs**.
 - Local AI PC range: **$600 to $8775 AUD**. Full customise, build, install, setup.
-- Private / no data leaks. Open models with full local control. No remote kill-switch.
+- Private / no data leaks. Uncensored models with full local control. No remote kill-switch.
 - Agent crew (BrabazonMind, BrabazonCode, BrabazonForge, BrabazonOS) is previewed on the agents page. Deploy is mailto `hello@brabazonpoint.com` with subject `Agent crew`.
 - Nav label is **Services** (file remains `pricing.html`).
 - Contact email everywhere: **hello@brabazonpoint.com**. No personal names on the site.
