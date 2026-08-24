@@ -1,5 +1,5 @@
 # Blueprint for a free Render Static Site.
-# Requires a Git repo connected to Render (Billy to create/push).
+# Requires a Git repo connected to Render.
 services:
   - type: web
     name: brabazonpoint-site
